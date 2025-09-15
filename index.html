@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,42 +11,40 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- font-awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    <script
+      src="https://kit.fontawesome.com/f9b49555d4.js"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    ></script>
+
+    <!--  -->
   </head>
-  <body>
+  <body class="ml-2">
     <!-- banner section starts here -->
     <div
-      class="parent_div flex justify-between border-2 border-red-500 max-w-[1140px] mx-auto"
+      class="parent_div flex flex-col md:flex-row justify-between max-w-[1250px] mx-auto mt-10"
     >
-      <div class="left_div border-2 border-green-500">
+      <div class="left_div md:w-1/2">
         <h1 class="text-7xl text-zinc-900 font-extrabold manrope_font">
           It's good <br />
           tea time at The Tea House
         </h1>
-        <p
-          class="text-neutral-500 text-lg font-medium my-7.5 manrope_font"
-        >
-          Tea and Botanical Solutions Supplier Give Optimum <br />
-          Satisfaction To Your Taste Buds.
+        <p class="text-neutral-500 text-[18px] font-medium my-7.5 manrope_font">
+          Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
+          Taste Buds.
         </p>
         <button
           class="w-48 h-16 bg-gradient-to-l from-red-600 to-orange-400 rounded-[10px] text-white text-xl font-bold manrope_font"
         >
-          Explore More
+          <span>Explore More</span>
+          <span><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
         </button>
       </div>
-      <div class="right_div border-2 border-blue-500">
-        <img src="media/banner.png" />
+      <div class="right_div md:w-1/2 relative">
+        <img src="media/banner.png" class="relative top-[50px]" />
         <div
-          class="w-64 h-24 bg-white rounded-[10px] flex items-center shadow-[0px_7px_50px_0px_rgba(0,0,0,0.06)]"
+          class="w-64 h-24 bg-white rounded-[10px] flex items-center shadow-[0px_7px_50px_0px_rgba(0,0,0,0.06)] absolute -bottom-10 left-7"
         >
-          <span class="text-3xl"><i class="fa-solid fa-star"></i></span>
+          <span class="text-3xl ml-5"><i class="fa-solid fa-star"></i></span>
           <div class="ml-4">
             <p class="text-zinc-900 text-3xl font-extrabold manrope-font">
               5.00
@@ -58,5 +56,171 @@
         </div>
       </div>
     </div>
+    <!-- featured section start here -->
+    <section class="max-w-[1250px] mx-auto mt-50 mb-30">
+      <h1 class="text-zinc-900 text-5xl font-extrabold text-center mb-4">
+        Our Featured Products
+      </h1>
+      <p class="text-center text-neutral-500 text-base font-medium mb-10">
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words which don't look even slightly believable.
+      </p>
+      <div class="parent flex flex-col gap-5 md:flex-row justify-between">
+        <div
+          class="card bg-gradient-to-b from-zinc-100 to-zinc-100/0 rounded-[10px] text-center space-y-5"
+        >
+          <img src="media/tea-1.png" class="mx-auto block mt-6" />
+          <h1 class="text-2xl font-extrabold text-zinc-900">Milk Tea</h1>
+          <p class="text-neutral-500 text-base font-semibold mb-6">
+            Creamer could be replaced by fresh milk
+          </p>
+        </div>
+        <div
+          class="card bg-gradient-to-b from-zinc-100 to-zinc-100/0 rounded-[10px] text-center space-y-5"
+        >
+          <img src="media/tea-2.png" class="mx-auto block mt-6" />
+          <h1 class="text-2xl font-extrabold text-zinc-900">Black Tea</h1>
+          <p class="text-neutral-500 text-base font-semibold">
+            Creamer could be replaced by fresh milk
+          </p>
+        </div>
+        <div
+          class="card bg-gradient-to-b from-zinc-100 to-zinc-100/0 rounded-[10px] text-center space-y-5"
+        >
+          <img src="media/tea-3.png" class="mx-auto block mt-6" />
+          <h1 class="text-2xl font-extrabold text-zinc-900">Lemon Tea</h1>
+          <p class="text-neutral-500 text-base font-semibold">
+            Creamer could be replaced by fresh milk
+          </p>
+        </div>
+        <div
+          class="card bg-gradient-to-b from-zinc-100 to-zinc-100/0 rounded-[10px] text-center space-y-5"
+        >
+          <img src="media/tea-4.png" class="mx-auto block mt-6" />
+          <h1 class="text-2xl font-extrabold text-zinc-900">Green Tea</h1>
+          <p class="text-neutral-500 text-base font-semibold">
+            Creamer could be replaced by fresh milk
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- great tea section -->
+    <section
+      class="parent flex flex-col md:flex-row gap-10 max-w-[1250px] mx-auto p-4 mb-30"
+    >
+      <div class="left div md:w-1/2 grid grid-cols-2 grid-rows-3 gap-4">
+        <div
+          class="bg-gradient-to-l from-red-600 to-orange-400 rounded-[10px] opacity-10"
+        ></div>
+        <div
+          class="row-span-2 bg-amber-500/10 rounded-[10px] flex justify-center items-center"
+        >
+          <img src="media/fresh-1.png" alt="" />
+        </div>
+        <div
+          class="row-span-2 bg-stone-600/10 rounded-[10px] flex justify-center items-center"
+        >
+          <img src="media/fresh-2.png" alt="" />
+        </div>
+        <div
+          class="bg-gradient-to-r from-zinc-300 to-white/0 rounded-[10px]"
+        ></div>
+      </div>
+      <div class="right div md:w-1/2 h-full space-y-5">
+        <p class="text-zinc-900 text-5xl font-extrabold mb-10">
+          Great Tea, Freshly Presented
+        </p>
+        <p class="text-neutral-500 text-base font-medium">
+          The meaning of gong cha is chanese is to provide the best tea to
+          emperor from all possessions . It represents the highest quality and
+          self expectation. Establishing in 2006, Gong cha had been deeply
+          appreciated by its custoers because of good words of mouth and unique
+          customized service orginated from Taiwan.
+        </p>
+        <p class="text-zinc-900 text-xl">Unique Taste</p>
+        <p class="text-neutral-500 text-base font-medium">
+          A Unique and different style from other teapots gives a <br />
+          luxurious and minimalist impression
+        </p>
+        <p class="text-zinc-900 text-xl">Premium Quality</p>
+        <p class="text-neutral-500 text-base font-medium">
+          Premium Quality that makes tea more elegant and more <br />
+          durable when you use it.
+        </p>
+      </div>
+    </section>
+    <!-- meet our clients section -->
+    <section
+      class="parent max-w-[1250px] mx-auto md:h-[600px] h-[1000px] flex flex-col md:flex-row gap-4 p-5 mb-30 bg-gradient-to-l from-red-600 to-orange-400 rounded-[10px]"
+    >
+      <div class="left div md:w-1/2 h-full flex justify-center items-center">
+        <div class="space-y-10">
+          <p class="text-zinc-100 text-5xl font-extrabold">
+            Meet Our Super Clients
+          </p>
+          <p class="text-zinc-100 text-base font-medium">
+            There are many variations of passages of Lorem Ipsum <br />
+            available, but the majority have suffered alteration in some <br />
+            form, by injected humour, or randomised words which don't <br />
+            look even slightly believable.
+          </p>
+          <button
+            class="w-36 h-14 bg-white rounded-lg text-red-600 text-xl font-bold"
+          >
+            Show All
+          </button>
+        </div>
+      </div>
+      <div class="right div md:w-1/2 h-full relative">
+        <div
+          class="h-[210px] w-[70vw] md:w-[70%] bg-white p-10 rounded-lg absolute top-[25%] left-[5%] z-10"
+        >
+          <p class="text-neutral-500 text-base font-normal mb-5">
+            We are providing the best and suitable home insurance services for
+            the people who are interested to treatment
+          </p>
+          <p class="text-zinc-900 text-base font-bold">Ilham Yuda</p>
+          <p class="text-gray-600 text-base font-medium">Businessman</p>
+          <div
+            class="absolute -top-[30px] -left-[30px] bg-white p-1 rounded-full"
+          >
+            <img src="media/client.png" alt="" />
+          </div>
+          <img src="media/circles.png" class="absolute right-4 bottom-4" />
+        </div>
+        <div
+          class="h-[210px] w-[70vw] md:w-[70%] bg-white p-10 rounded-lg absolute top-[5%] left-[30%] opacity-20"
+        >
+          <p class="text-neutral-500 text-base font-normal mb-5">
+            We are providing the best and suitable home insurance services for
+            the people who are interested to treatment
+          </p>
+          <p class="text-zinc-900 text-base font-bold">Ilham Yuda</p>
+          <p class="text-gray-600 text-base font-medium">Businessman</p>
+          <div
+            class="absolute -top-[30px] -left-[30px] bg-white p-1 rounded-full"
+          >
+            <img src="media/client.png" alt="" />
+          </div>
+        </div>
+        <div
+          class="h-[210px] w-[70vw] md:w-[70%] bg-white p-10 rounded-lg absolute top-[55%] left-[30%] opacity-20"
+        >
+          <p class="text-neutral-500 text-base font-normal mb-5">
+            We are providing the best and suitable home insurance services for
+            the people who are interested to treatment
+          </p>
+          <p class="text-zinc-900 text-base font-bold">Ilham Yuda</p>
+          <p class="text-gray-600 text-base font-medium">Designer</p>
+          <div
+            class="absolute -top-[30px] -left-[30px] bg-white p-1 rounded-full"
+          >
+            <img src="media/client.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer  -->
   </body>
 </html>
